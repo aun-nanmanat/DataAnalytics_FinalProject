@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+<title>Data Analytics 2023 - Final Project 10</title>
+<style type="text/css">
+body{font-family: Arial, Helvetica, Sans;}
+</style>
+
+<meta charset="UTF-8">
+
+</head>
+
+<body>
+<h2>Data Analytics 2023 - Final Project 10</h2>
+<h3> January 28 - 31, 202<4/h3>
+
+<ol>
+<li>
+<h4>Question</h4>
+<p>The data in the file  is about student achievement in secondary education of two Portuguese schools. The data attributes include student grades, demographic, social and school related features and it was collected by using school reports and questionnaires</p>
+<p>The general task of your project is to understand what impacts success in the two subjects <em>Mathematics</em> and <em>Portuguese</em>.</p>
+<p>Task 1: Build a predictive model for the target variable <strong>G1.Port</strong> without using any of the other grade features.
+Moreover, your model must contain the variables <strong>activities, famrel, failures.Math</strong> but not the variables <strong>Mjob, Fjob</strong>.</p>
+<p>Task 2: Bin the target variable <strong>G1.Port</strong> into <strong>4</strong> categories in such a way that the resulting bins contain roughly equal number of cases. Use this newly created categorical variable as response for a classification model. Again do no tuse any other grade feature and build a model that contains the variables <strong>activities, famrel, failures.Math</strong> but not the variables <strong>Mjob, Fjob</strong>.</p>
+<p>Here comes the explanation of the features included in the data set:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Description</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>school</td>
+<td>student’s school</td>
+<td>“GP” - Gabriel Pereira or “MS” - Mousinho da Silveira</td>
+</tr>
+<tr class="even">
+<td>sex</td>
+<td>student’s sex</td>
+<td>“F” - female or “M” - male</td>
+</tr>
+<tr class="odd">
+<td>age</td>
+<td>student’s age</td>
+<td>numeric: from 15 to 22</td>
+</tr>
+<tr class="even">
+<td>address</td>
+<td>student’s home address type</td>
+<td>“U” - urban or “R” - rural</td>
+</tr>
+<tr class="odd">
+<td>famsize</td>
+<td>family size</td>
+<td>“LE3” - less or equal to 3 or “GT3” - greater than 3</td>
+</tr>
+<tr class="even">
+<td>Pstatus</td>
+<td>parent’s cohabitation status</td>
+<td>“T” - living together or “A” - apart</td>
+</tr>
+<tr class="odd">
+<td>Medu</td>
+<td>mother’s education</td>
+<td>numeric: 0 - none, 1 - primary education, 2 – 5th to 9th grade, 3 – secondary education, 4 – higher education</td>
+</tr>
+<tr class="even">
+<td>Fedu</td>
+<td>father’s education</td>
+<td>numeric: 0 - none, 1 - primary education, 2 – 5th to 9th grade, 3 – secondary education, 4 – higher education</td>
+</tr>
+<tr class="odd">
+<td>Mjob</td>
+<td>mother’s job</td>
+<td>“teacher”, “health” care related, “services”, “at_home” or “other”</td>
+</tr>
+<tr class="even">
+<td>Fjob</td>
+<td>father’s job</td>
+<td>“teacher”, “health” care related, “services”, “at_home” or “other”</td>
+</tr>
+<tr class="odd">
+<td>reason</td>
+<td>reason to choose this school</td>
+<td>“home”, “reputation”, “course” preference or “other”</td>
+</tr>
+<tr class="even">
+<td>guardian</td>
+<td>student’s guardian</td>
+<td>“mother”, “father” or “other”</td>
+</tr>
+<tr class="odd">
+<td>traveltime</td>
+<td>home to school travel time</td>
+<td>numeric: 1 - &lt;15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, 4 - &gt;1 hour</td>
+</tr>
+<tr class="even">
+<td>studytime</td>
+<td>weekly study time</td>
+<td>numeric: 1 - &lt;2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, 4 - &gt;10 hours</td>
+</tr>
+<tr class="odd">
+<td>failures</td>
+<td>number of past class failures</td>
+<td>numeric: n if 1&lt;=n&lt;3, else 4</td>
+</tr>
+<tr class="even">
+<td>schoolsup</td>
+<td>extra educational support</td>
+<td>yes or no</td>
+</tr>
+<tr class="odd">
+<td>famsup</td>
+<td>family educational support</td>
+<td>yes or no</td>
+</tr>
+<tr class="even">
+<td>paid</td>
+<td>extra paid classes within the course subject</td>
+<td>yes or no</td>
+</tr>
+<tr class="odd">
+<td>activities</td>
+<td>extra-curricular activities</td>
+<td>yes or no</td>
+</tr>
+<tr class="even">
+<td>nursery</td>
+<td>attended nursery school</td>
+<td>yes or no</td>
+</tr>
+<tr class="odd">
+<td>higher</td>
+<td>wants to take higher education</td>
+<td>yes or no</td>
+</tr>
+<tr class="even">
+<td>internet</td>
+<td>Internet access at home</td>
+<td>yes or no</td>
+</tr>
+<tr class="odd">
+<td>romantic</td>
+<td>with a romantic relationship</td>
+<td>yes or no</td>
+</tr>
+<tr class="even">
+<td>famrel</td>
+<td>quality of family relationships</td>
+<td>numeric: from 1 - very bad to 5 - excellent</td>
+</tr>
+<tr class="odd">
+<td>freetime</td>
+<td>free time after school</td>
+<td>numeric: from 1 - very low to 5 - very high</td>
+</tr>
+<tr class="even">
+<td>goout</td>
+<td>going out with friends</td>
+<td>numeric: from 1 - very low to 5 - very high</td>
+</tr>
+<tr class="odd">
+<td>Dalc</td>
+<td>workday alcohol consumption</td>
+<td>numeric: from 1 - very low to 5 - very high</td>
+</tr>
+<tr class="even">
+<td>Walc</td>
+<td>weekend alcohol consumption</td>
+<td>numeric: from 1 - very low to 5 - very high</td>
+</tr>
+<tr class="odd">
+<td>health</td>
+<td>current health status</td>
+<td>numeric: from 1 - very bad to 5 - very good</td>
+</tr>
+<tr class="even">
+<td>absences</td>
+<td>number of school absences</td>
+<td>numeric: from 0 to 93</td>
+</tr>
+<tr class="odd">
+<td>G1</td>
+<td>first period grade</td>
+<td>numeric: from 0 to 20</td>
+</tr>
+<tr class="even">
+<td>G2</td>
+<td>second period grade</td>
+<td>numeric: from 0 to 20</td>
+</tr>
+<tr class="odd">
+<td>G3</td>
+<td>final grade</td>
+<td>numeric: from 0 to 20</td>
+</tr>
+</tbody>
+</table>
+<p>The features <em>failures, paid, absences, G1, G2, G3</em> are recorded for the Math subject and the Portuguese subject, hence a corresponding suffix has been added to the variable name.</p>
+<br/>
+</li>
+</ol>
+
+</body>
+</html>
