@@ -1,4 +1,50 @@
 # Data Analytics Final Project: Student Achievement in Secondary Education of Two Portuguese Schools 
+## Project Overview
+### Objective: 
+To uncover the determinants of academic success in Mathematics and Portuguese by analyzing student grades, demographics, social factors, and school-related features.
+
+### Key Techniques and Methodologies:
+- **Data Preprocessing and Exploration:** Cleaned and processed a diverse dataset containing student grades, demographic details, social factors, and school features.
+
+- **Model Development:** Implemented regression and classification models to predict student achievement.
+
+- **Evaluation Metrics:** Used confusion matrix, ROC, and AUC curves to evaluate model performance.
+
+### Key Findings:
+**Demographic Insights:**
+
+- Gender disparities: Females outperformed males in Portuguese; males excelled in Mathematics.
+
+- Parental living situation: Students with parents living apart performed better academically.
+
+**School-Related Factors:** 
+
+- Course preference was the primary factor influencing school choice.
+
+- Gabriel Pereira students generally outperformed Mousinho da Silveira students.
+
+**Social Factors:**
+
+- Positive family dynamics, moderate free time, and minimal alcohol consumption correlated with better academic outcomes.
+
+- Extracurricular activities, aspiration for higher education, and internet access at home positively correlated with academic performance.
+
+## Model Performance:
+**Regression Models (Task 1):** The Decision Tree model achieved the highest R-squared value (0.83), lowest MAE (0.47), and MSE (1.18).
+
+**Classification Models (Task 2):**
+
+- Both Decision Tree and Random Forest models displayed the highest accuracy (76%).
+
+- Balanced performance across precision, recall, and F1-score metrics, with precision (weighted) values of 0.79 (Decision Tree) and 0.78 (Random Forest).
+
+## Impact:
+- This project showcases my ability to handle complex datasets, develop predictive models, and draw actionable insights for academic interventions and support strategies.
+
+- Demonstrates proficiency in regression and classification techniques, and in evaluating model performance using key metrics.
+
+- These models can help educators tailor interventions based on individual needs, proactively addressing academic challenges to foster student success in Mathematics and Portuguese.
+- 
 ## Executive Summary
 This executive summary provides a condensed overview of the final project "Student Achievement in Secondary Education of Two Portuguese Schools." The analysis delves into the myriad factors influencing student success in Mathematics and Portuguese, utilizing a diverse dataset comprising student grades, demographic details, social factors, and school-related features. The project aims to uncover the underlying determinants of academic achievement in the specified subjects through two primary tasks. Through systematic exploration, data preprocessing, and model development, the project seeks to gain valuable insights into the factors shaping performance outcomes in secondary education. The modeling phase entails implementing regression and classification models to address the defined tasks, followed by evaluation using metrics such as confusion matrix, ROC, and AUC curves.
 
