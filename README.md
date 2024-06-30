@@ -1,5 +1,14 @@
 # Data Analytics Final Project: Student Achievement in Secondary Education of Two Portuguese Schools 
 ## Project Overview
+### Question
+The data in the file is about student achievement in secondary education of two Portuguese schools. The data attributes include student grades, demographic, social and school related features and it was collected by using school reports and questionnaires
+
+The general task of your project is to understand what impacts success in the two subjects Mathematics and Portuguese.
+
+- **Task 1:** Build a predictive model for the target variable G1.Port without using any of the other grade features. Moreover, your model must contain the variables activities, famrel, failures.Math but not the variables Mjob, Fjob.
+
+- **Task 2:** Bin the target variable G1.Port into 4 categories in such a way that the resulting bins contain roughly equal number of cases. Use this newly created categorical variable as response for a classification model. Again do no tuse any other grade feature and build a model that contains the variables activities, famrel, failures.Math but not the variables Mjob, Fjob.
+
 ### Objective: 
 To uncover the determinants of academic success in Mathematics and Portuguese by analyzing student grades, demographics, social factors, and school-related features.
 
