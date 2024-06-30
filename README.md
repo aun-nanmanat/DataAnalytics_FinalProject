@@ -44,7 +44,7 @@ To uncover the determinants of academic success in Mathematics and Portuguese by
 - Demonstrates proficiency in regression and classification techniques, and in evaluating model performance using key metrics.
 
 - These models can help educators tailor interventions based on individual needs, proactively addressing academic challenges to foster student success in Mathematics and Portuguese.
-- 
+
 ## Executive Summary
 This executive summary provides a condensed overview of the final project "Student Achievement in Secondary Education of Two Portuguese Schools." The analysis delves into the myriad factors influencing student success in Mathematics and Portuguese, utilizing a diverse dataset comprising student grades, demographic details, social factors, and school-related features. The project aims to uncover the underlying determinants of academic achievement in the specified subjects through two primary tasks. Through systematic exploration, data preprocessing, and model development, the project seeks to gain valuable insights into the factors shaping performance outcomes in secondary education. The modeling phase entails implementing regression and classification models to address the defined tasks, followed by evaluation using metrics such as confusion matrix, ROC, and AUC curves.
 
