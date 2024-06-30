@@ -19,34 +19,6 @@ To uncover the determinants of academic success in Mathematics and Portuguese by
 
 - **Evaluation Metrics:** Used confusion matrix, ROC, and AUC curves to evaluate model performance.
 
-### Key Findings:
-**Demographic Insights:**
-
-- Gender disparities: Females outperformed males in Portuguese; males excelled in Mathematics.
-
-- Parental living situation: Students with parents living apart performed better academically.
-
-**School-Related Factors:** 
-
-- Course preference was the primary factor influencing school choice.
-
-- Gabriel Pereira students generally outperformed Mousinho da Silveira students.
-
-**Social Factors:**
-
-- Positive family dynamics, moderate free time, and minimal alcohol consumption correlated with better academic outcomes.
-
-- Extracurricular activities, aspiration for higher education, and internet access at home positively correlated with academic performance.
-
-## Model Performance:
-**Regression Models (Task 1):** The Decision Tree model achieved the highest R-squared value (0.83), lowest MAE (0.47), and MSE (1.18).
-
-**Classification Models (Task 2):**
-
-- Both Decision Tree and Random Forest models displayed the highest accuracy (76%).
-
-- Balanced performance across precision, recall, and F1-score metrics, with precision (weighted) values of 0.79 (Decision Tree) and 0.78 (Random Forest).
-
 ## Impact:
 - This project showcases my ability to handle complex datasets, develop predictive models, and draw actionable insights for academic interventions and support strategies.
 
